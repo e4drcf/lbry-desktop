@@ -27,7 +27,7 @@
     "dev:electron": "cross-env NODE_ENV=development node ./src/platforms/electron/devServer.js",
     "dev:web": "cross-env NODE_ENV=development webpack-dev-server --open --hot --progress --config webpack.web.config.js",
     "dev:internal-apis": "LBRY_API_URL='http://localhost:8080' yarn dev:electron",
-    "run:web": "cross-env NODE_ENV=production yarn compile:web && node ./dist/web/server.js",
+    "run:web": "cross-env NODE_ENV=production SDK_API_URL='http://localhost:8080' yarn compile:web && node ./dist/web/server.js",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "build": "cross-env NODE_ENV=production yarn compile:electron && electron-builder build",
