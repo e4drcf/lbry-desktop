@@ -32,7 +32,7 @@ const defaultState = {
     [SETTINGS.HIDE_BALANCE]: Boolean(getLocalStorageSetting(SETTINGS.HIDE_BALANCE, false)),
   },
   isNight: false,
-  languages: { en: 'English', pl: 'Polish', id: 'Bahasa Indonesia' }, // temporarily hard code these so we can advance i18n testing
+  languages: { en: 'English', pl: 'Polish', id: 'Bahasa Indonesia', ru: 'Russian' }, // temporarily hard code these so we can advance i18n testing
   daemonSettings: {},
 };
 
